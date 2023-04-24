@@ -7,6 +7,29 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Menu HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="89">
+            <MenuItem Header="Меню">
+                <MenuItem x:Name="regItem" Header="Регистрация" Click="regItem_Click"/>
+                <MenuItem Header="About"/>
+            </MenuItem>
+        </Menu>
+
 
     </Grid>
 </Window>

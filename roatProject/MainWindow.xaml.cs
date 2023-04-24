@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Threading;
 
 namespace roatProject
 {
@@ -23,6 +24,15 @@ namespace roatProject
         public MainWindow()
         {
             InitializeComponent();
+            
+            
+
+        }
+
+        private void regItem_Click(object sender, RoutedEventArgs e)
+        {
+            RegWindow regWindow = new RegWindow();
+            regWindow.ShowDialog();
         }
     }
 }
