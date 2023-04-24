@@ -19,8 +19,8 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label Content="Введите последние 4 цифры вашего студенческого" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="30" Margin="72,29,0,0" VerticalAlignment="Top" Width="374" FontSize="15" Grid.RowSpan="2"/>
-        <TextBox x:Name="numbBox" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="24" Margin="72,48,0,0" Grid.RowSpan="2" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="150">
+        <Label Content="Введите последние 4 цифры вашего студенческого" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="30" Margin="73,37,0,0" VerticalAlignment="Top" Width="374" FontSize="15" Grid.RowSpan="2" Grid.Row="2"/>
+        <TextBox x:Name="numbBox" Grid.ColumnSpan="2" Margin="87,23,62,10" Grid.Row="3" TextWrapping="Wrap" RenderTransformOrigin="0.521,-0.772">
             <TextBox.Text>
                 <Binding Path="intVar">
                     <Binding.ValidationRules>
@@ -29,7 +29,10 @@
                 </Binding>
             </TextBox.Text>
         </TextBox>
-        <Button x:Name="numbButton" Content="Ввести" Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Left" Height="24" Margin="62,48,0,0" Grid.RowSpan="2" Grid.Row="1" VerticalAlignment="Top" Width="108" Click="numbButton_Click"/>
+        <Button x:Name="numbButton" Content="Ввести" Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Left" Height="25" Margin="62,23,0,0" Grid.Row="3" VerticalAlignment="Top" Width="108" Click="numbButton_Click"/>
+        <Label Content="Введите ФИО" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="30" Margin="63,0,0,0" VerticalAlignment="Center" Width="107" FontSize="15" Grid.Column="1"/>
+        <TextBox x:Name="nameBox" Grid.ColumnSpan="2" Margin="42,10,10,23" Grid.Row="1" TextWrapping="Wrap" RenderTransformOrigin="0.521,-0.772"/>
+        <Button x:Name="nameButton" Content="Ввести" Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Left" Height="25" Margin="62,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="108"/>
 
     </Grid>
 </Window>

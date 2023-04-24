@@ -32,11 +32,12 @@ namespace roatProject
     public partial class RegWindow : Window
     {
         public Variant coef { get; set; }
-        private MainWindow window;
 
         public RegWindow()
         {
             InitializeComponent();
+            ((MainWindow)System.Windows.Application.Current.MainWindow).varLabel.Content = "Вариант ";
+
             coef = new Variant
             {
                 strVar = "abc",
