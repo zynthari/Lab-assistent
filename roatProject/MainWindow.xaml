@@ -29,6 +29,8 @@
                 <MenuItem Header="About"/>
             </MenuItem>
         </Menu>
+        <Label x:Name="varLabel" Content="Вариант " Grid.ColumnSpan="3" Grid.Column="1" HorizontalAlignment="Left" Height="26" Margin="112,36,0,0" VerticalAlignment="Top" Width="261"/>
+        <Button x:Name="task1Button" Content="Задача 1" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="61" Margin="102,48,0,0" Grid.RowSpan="2" Grid.Row="1" VerticalAlignment="Top" Width="165" Click="task1Button_Click"/>
 
 
     </Grid>

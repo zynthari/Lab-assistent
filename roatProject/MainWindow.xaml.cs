@@ -25,14 +25,22 @@ namespace roatProject
         {
             InitializeComponent();
             
-            
+
 
         }
 
         private void regItem_Click(object sender, RoutedEventArgs e)
         {
             RegWindow regWindow = new RegWindow();
+            regWindow.Owner = this;
             regWindow.ShowDialog();
+        }
+
+        private void task1Button_Click(object sender, RoutedEventArgs e)
+        {
+            Task1Window task1Window = new Task1Window();
+            task1Window.Owner = this;
+            task1Window.ShowDialog();
         }
     }
 }
